@@ -9,9 +9,9 @@ insightMars = (apiKey) => {
          //Object Decontructor for Data
         let {sol_keys: [ , latestDay]} = data;
         let{av: average, mn: min, mx: max} = data[latestDay].PRE
-        let averageTemp = Math.round(average * 10) / 10
-        let minTemp = Math.round(min * 10) / 10
-        let maxTemp = Math.round(max * 10) / 10
+        let averageTemp = Math.round((average * 10) / 10)
+        let minTemp = Math.round((min * 10) / 10)
+        let maxTemp = Math.round((max * 10) / 10)
         let dateRecorded = data[latestDay].Last_UTC
         
         let newArr = getDate();
